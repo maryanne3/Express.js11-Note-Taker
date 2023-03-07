@@ -11,11 +11,12 @@ This Note Taker Application can be used to write and save notes. This applicatio
  
  ## Technologies 
  
- *HTML 
- *JavaScript 
+ * HTML 
+ * JavaScript 
  * CSS
  * Heroku 
  * Node.js 
  * Express.js 
  
- ## Links 
+
+ 
