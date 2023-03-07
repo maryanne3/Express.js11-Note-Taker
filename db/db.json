@@ -2,5 +2,17 @@
     {
         "title":"Test Title",
         "text":"Test text"
-    }
+    },
+    {
+        "id": 1,
+        "title": "Coding Notes",
+        "text": "Here are my coding notes"},
+    { 
+        "id": 2,
+        "title": "To Do List:",
+        "text": "Wash car\nCode homework"},
+    {
+        "id": 3,
+        "title": "Shopping List",
+        "text": "Water\nCoffee\nBread\nCheese\nApples\nCheesecake"}
 ]
