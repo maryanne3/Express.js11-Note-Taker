@@ -1,18 +1,19 @@
 [
+    
     {
-        "title":"Test Title",
-        "text":"Test text"
+
+        "title": "Hair Products",
+        "text": "Brush\nOlive oil\nConditioner",
+        "id": 1
+    },
+    { 
+        "title": "Call Bank:",
+        "text": "Ask about transactions", 
+         "id": 2
     },
     {
-        "id": 1,
-        "title": "Hair Products",
-        "text": "Brush\nOlive oil\nConditioner"},
-    { 
-        "id": 2,
-        "title": "Call Bank:",
-        "text": "Ask about transactions"},
-    {
-        "id": 3,
         "title": "Shopping List",
-        "text": "Water\nCoffee\nBread\nCheese\nApples\nCheesecake"}
+        "text": "Water\nCoffee\nBread\nSoap\nChicken\nTissue",
+         "id": 3
+    }
 ]
