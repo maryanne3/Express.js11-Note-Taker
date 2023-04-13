@@ -1,25 +1,27 @@
 const router = require("express").Router();
 const fs = require("fs");
 
-let nTaker = require("../db/db.json");
-let id = nTaker.length + 1;
+let notes = require("../database/db.json");
+let id = notes.length + 1;
 
-router.get("/nTaker", (req, res) => {
-  res.json(nTaker);
+// Get notes 
+router.get("/notes", (req, res) => {
+  res.json(notes);
 });
 
-router.post("/nTaker", (req, res) => {
+router.post("/notes", (req, res) => {
   req.body.id = id;
-  nTaker.push(req.body);
+  notes.push(req.body);
 
-  fs.writeFileSync("./db/db.json", JSON.stringify(nTaker));
-  res.json(nTaker);
+  fs.writeFileSync("./database/db.json", JSON.stringify(notes));
+  res.json(notes);
 });
 
-router.delete("/nTaker/:id", (req, res) => {
-  let newTaker = nTaker.filter((nTaker) => nTaker.id !== id);
-  nTaker = newTaker;
-  fs.writeFileSync("./db/db.json", JSON.stringify(newTaker));
+// Delete 
+router.delete("/notes/:id", (req, res) => {
+  let newNotes = notes.filter((notes) => notes.id !== id);
+  notes = newNotes;
+  fs.writeFileSync("./database/db.json", JSON.stringify(newNotes));
   res.json(true);
 });
 
